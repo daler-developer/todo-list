@@ -1,0 +1,53 @@
+.footer {
+  & {
+    margin: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__stat {
+    font-weight: 500;
+
+    &--completed {
+      color: $color-green;
+    }
+    &--not-completed {
+      color: $color-red;
+    }
+  }
+  &__delete-btn {
+    color: $color-white;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: $color-blue;
+    padding: 5px 10px;
+
+    &:hover {
+      background-color: $color-dark-blue;
+    }
+    &--scale-down {
+      animation: scale-down .1s linear forwards;
+    }
+    &--scale-up {
+      animation: scale-up .1s linear forwards;
+    }
+  }
+}
+
+@keyframes scale-down {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(.97);
+  }
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(.97);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

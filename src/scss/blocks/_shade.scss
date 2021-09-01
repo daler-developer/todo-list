@@ -1,0 +1,16 @@
+.shade {
+  & {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color-black-05;
+    transition: all .2s ease-in;
+    z-index: $z-index-shade;
+  }
+  &__hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

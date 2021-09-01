@@ -1,0 +1,21 @@
+.header {
+  & {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__add-btn {
+    @include center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $color-white;
+    color: $color-red;
+    box-shadow: 0 0 20px $color-black-01;
+    transition: transform 0.1s linear;
+
+    &:focus {
+      transform: scale(.90);
+    }
+  }
+}

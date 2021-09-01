@@ -1,0 +1,71 @@
+.edit-task-window {
+  & {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: $z-index-popup-window;
+    background-color: $color-white;
+    padding: 15px;
+    width: 300px;
+    transition: all .2s ease-in;
+  }
+  &--hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__close-btn {
+    @include center;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 25px;
+    height: 25px;
+
+    &:hover {
+      background-color: $color-black-01;
+      border-radius: 3px;
+    }
+  }
+  &__close-icon {
+    font-size: 20px;
+  }
+  &__form {
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  &__text-input-wrapper {
+    border: 1px solid $color-black-05;
+    height: 36px;
+
+    &--error {
+      border-color: $color-dark-red;
+    }
+    &:not(.edit-task-window__text-input-wrapper--error):hover {
+      border-color: $color-black;
+    }
+  }
+  &__text-input {
+    height: 100%;
+    width: 100%;
+    padding: 0 5px;
+    font-size: 16px;
+  }
+  &__submit-btn {
+    margin: 10px 0 0 0;
+    height: 35px;
+    background-color: $color-blue;
+    color: $color-white;
+    font-size: 18px;
+
+    &:hover {
+      background-color: $color-dark-blue;
+    }
+  }
+}

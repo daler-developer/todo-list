@@ -1,0 +1,17 @@
+.main {
+  & {
+    margin: 20px 0 0 0;
+  }
+  &__top {
+    display: flex;
+    align-items: stretch;
+    height: 30px;
+  }
+  &__warning {
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid $color-yellow;
+    color: $color-yellow;
+  }
+}

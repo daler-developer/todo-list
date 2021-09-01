@@ -1,0 +1,9 @@
+@mixin b($size: 1px, $color: rgb(0, 0, 0)) {
+  border: $size solid $color;
+}
+
+@mixin center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

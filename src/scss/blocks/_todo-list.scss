@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined');
+
+.todo-list {
+  & {
+    max-width: 500px;
+    margin: 30px auto 0 auto;
+    padding: 15px 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px $color-black-01;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .todo-list {
+    & {
+      margin: 0;
+    }
+  }
+}
