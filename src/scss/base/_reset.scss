@@ -4,9 +4,21 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 html {
   font-family: Roboto;
   font-size: 16px;
+}
+
+body {
+  padding: 20px 0;
+
+  @media all and (max-width: 768px) {
+    padding: 0;
+  }
 }
 
 button, input {

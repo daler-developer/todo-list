@@ -3,11 +3,6 @@
     width: 40%;
     padding: 0 0 0 5px;
   }
-  &__hidden-select {
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
   &__select {
     border: 1px solid $color-black-02;
     width: 100%;
@@ -43,6 +38,7 @@
     transition: all .2s linear;
     border-radius: 2px;
     box-shadow: 0 0 20px $color-black-01;
+    z-index: $z-index-dropdown;
 
     &--hidden {
       visibility: hidden;

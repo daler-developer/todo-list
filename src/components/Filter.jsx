@@ -41,7 +41,7 @@ const Filter = (props) => {
             {selectOptions.find(o => o.filter === props.filter).content}
           </span>
           <span
-            class={`filter__arrow-icon material-icons-outlined ${dropdownOpened && 'filter__arrow-icon--rotated'}`}
+            className={`filter__arrow-icon material-icons-outlined ${dropdownOpened ? 'filter__arrow-icon--rotated' : ''}`}
           >
             expand_more
           </span>
@@ -50,7 +50,7 @@ const Filter = (props) => {
           {selectOptions.map((option) => (
             <li
               key={option.filter}
-              className={`filter__dropdown-item ${props.filter === option.filter && 'filter__dropdown-item--selected'}`}
+              className={`filter__dropdown-item ${props.filter === option.filter ? 'filter__dropdown-item--selected' : ''}`}
               onClick={() => changeFilter(option.filter)}
             >
               {option.content}

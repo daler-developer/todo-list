@@ -8,11 +8,6 @@ const Footer = (props) => {
 
   const deleteCompletedTasks = () => {
     props.deleteCompletedTasks()
-
-    // btnRef.current.classList.add('footer__delete-btn--pressed')
-    // btnRef.current.addEventListener('animationend', (e) => {
-    //   e.target.classList.remove('footer__delete-btn--pressed')
-    // })
   }
 
   const clearAnimClasses = (target) => {
