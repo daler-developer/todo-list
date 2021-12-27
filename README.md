@@ -1,24 +1,45 @@
-# Todo List
+# Welcome to Image Gallery 👋
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
+[![Twitter: DalerSaidov2003](https://img.shields.io/twitter/follow/DalerSaidov2003.svg?style=social)](https://twitter.com/DalerSaidov2003)
 
-Welcome to Todo List app to increase your prodoctivity!
+> A web app, that let's you upload image files, as well as deleting, liking them
 
-## Demo:
+### 🏠 [Homepage](https://daler-developer.github.io/todo-list)
 
-![Preview](/preview.jpg)  
-Link: https://daler-developer.github.io/todo-list/
+### ✨ [Demo](/preview.jpg)
 
-## Teck Stack:
+## Install
 
-- HTML5
-- CSS3
+```sh
+npm install
+```
+
+## Usage
+
+```sh
+npm start
+```
+
+## Run tests
+
+```sh
+npm run test
+```
+
+## Tech Stack
+
+- React/Redux
+- TypeScript
 - Sass
-- React(Redux + Redux Toolkit)
-- Material Icons
 
-## Key features
+## Author
 
-- Responsibe and unique design
-- Creating, Editing, Deleting, Completing todo items
-- Filtering
+👤 **Saidov Daler**
 
-And many more...
+* Twitter: [@DalerSaidov2003](https://twitter.com/DalerSaidov2003)
+* Github: [@daler-developer](https://github.com/daler-developer)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
